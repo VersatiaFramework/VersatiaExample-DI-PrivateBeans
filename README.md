@@ -1,20 +1,19 @@
-    # VersatiaExample-DI-PrivateBeans
+# VersatiaExample-DI-PrivateBeans
 
-    Beans, their constructors and auto-invoked functions may be `private`: the generated code falls back to reflection for them and nothing has to be widened.
+Beans, their constructors and auto-invoked functions may be `private`: the generated code falls back to reflection for them and nothing has to be widened.
 
-    Part of the [Versatia examples](https://github.com/VersatiaFramework/VersatiaExamples); documentation: [Direct access versus reflection](https://versatiaframework.github.io/VersatiaDocs/docs/internals/descriptor#direct-access-versus-reflection).
+Part of the [Versatia examples](https://github.com/VersatiaFramework/VersatiaExamples); documentation: [Direct access versus reflection](https://versatiaframework.github.io/VersatiaDocs/docs/internals/descriptor#direct-access-versus-reflection).
 
-    **Start with** [`Vault.kt`](src/main/kotlin/com/github/marcoral/versatia/example/privatebeans/Vault.kt).
+**Start with** [`Vault.kt`](src/main/kotlin/com/github/marcoral/versatia/example/privatebeans/Vault.kt).
 
-    ## What the log shows
+## What the log shows
 
-    ```
-    [Key] created, a private class
-[Vault] created with a private Key
-[Auditor] created
-[Auditor] audit() called through reflection with the Key
-    ```
-
+```
+[VersatiaExample-DI-PrivateBeans] Key created, a private class
+[VersatiaExample-DI-PrivateBeans] Vault created with a private Key
+[VersatiaExample-DI-PrivateBeans] Auditor created
+[VersatiaExample-DI-PrivateBeans] Auditor.audit() called through reflection with the Key
+```
 
 ## Things to try
 
@@ -24,8 +23,10 @@
 
 ## Building
 
-Requires JDK 21 and VersatiaAPI in your local Maven repository (`./gradlew publishToMavenLocal`
-in its checkout); running it requires a Paper 1.21.4 server with VersatiaCore installed.
+Requires JDK 21 and VersatiaStarter with what it exports (VersatiaAPI, the module APIs) in your
+local Maven repository (`./gradlew publishToMavenLocal` in each checkout; see
+[Building the framework](https://versatiaframework.github.io/VersatiaDocs/docs/contributing/building));
+running it requires a Paper 1.21.4 server with VersatiaCore installed.
 
 ```bash
 ./gradlew build
