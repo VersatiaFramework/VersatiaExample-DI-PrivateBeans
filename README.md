@@ -10,8 +10,8 @@ Part of the [Versatia examples](https://github.com/VersatiaFramework/VersatiaExa
 
 ```
 [VersatiaExample-DI-PrivateBeans] Key created, a private class
-[VersatiaExample-DI-PrivateBeans] Vault created with a private Key
-[VersatiaExample-DI-PrivateBeans] Auditor created
+[VersatiaExample-DI-PrivateBeans] Vault created with the private Key
+[VersatiaExample-DI-PrivateBeans] Auditor created with the Vault
 [VersatiaExample-DI-PrivateBeans] Auditor.audit() called through reflection with the Key
 ```
 
