@@ -2,9 +2,9 @@
 
 Beans, their constructors and auto-invoked functions may be `private`: the generated code falls back to reflection for them and nothing has to be widened.
 
-Part of the [Versatia examples](https://github.com/VersatiaFramework/VersatiaExamples); documentation: [Direct access versus reflection](https://versatiaframework.github.io/VersatiaDocs/docs/internals/descriptor#direct-access-versus-reflection).
+Part of the [Versatia examples](https://github.com/VersatiaFramework/VersatiaExamples); documentation: [Direct access versus reflection](https://versatia.dev/docs/internals/descriptor#direct-access-versus-reflection).
 
-**Start with** [`Vault.kt`](src/main/kotlin/com/github/marcoral/versatia/example/privatebeans/Vault.kt).
+**Start with** [`Vault.kt`](src/main/kotlin/dev/versatia/example/privatebeans/Vault.kt).
 
 ## What the log shows
 
@@ -25,7 +25,7 @@ Part of the [Versatia examples](https://github.com/VersatiaFramework/VersatiaExa
 
 Requires JDK 21 and VersatiaAPI in your
 local Maven repository (`./gradlew publishToMavenLocal` in each checkout; see
-[Building the framework](https://versatiaframework.github.io/VersatiaDocs/docs/contributing/building));
+[Building the framework](https://versatia.dev/docs/contributing/building));
 running it requires a Paper 1.21.4 server with VersatiaCore installed.
 
 ```bash

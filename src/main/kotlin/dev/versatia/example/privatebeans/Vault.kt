@@ -1,8 +1,8 @@
-package com.github.marcoral.versatia.example.privatebeans
+package dev.versatia.example.privatebeans
 
-import com.github.marcoral.versatia.Phase
-import com.github.marcoral.versatia.di.LocalBean
-import com.github.marcoral.versatia.lifecycle.AutoInvoke
+import dev.versatia.Phase
+import dev.versatia.di.LocalBean
+import dev.versatia.lifecycle.AutoInvoke
 import java.util.logging.Logger
 
 /** Private to this file: the generated code cannot name it, so the descriptor instantiates it reflectively. */

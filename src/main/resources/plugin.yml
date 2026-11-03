@@ -1,6 +1,6 @@
 name: VersatiaExample-DI-PrivateBeans
 version: '${version}'
-main: com.github.marcoral.versatia.example.privatebeans.PrivateBeansPlugin
+main: dev.versatia.example.privatebeans.PrivateBeansPlugin
 api-version: '1.21'
 author: Versatia
 description: Private beans and functions.
